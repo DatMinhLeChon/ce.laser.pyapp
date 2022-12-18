@@ -1,0 +1,16 @@
+
+import pandas as pd 
+
+
+## read xslx file database CE
+def read_xlsx(file_name):
+    df = pd.read_xlsx(file_name)
+    return df
+
+
+##         
+## Connect SQL server database engine
+def connect_Sql(Database_name, port, user, password):
+    sqlconnect_string = Database_name +"," + port +";" + user + ";"+ password
+
+## Connect SQL server string and test step
